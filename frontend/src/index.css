@@ -1,0 +1,80 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 20px;
+  background-color: #1f2937; /* Tailwind gray-800 */
+  color: #111827;
+}
+
+/* Container utama */
+.app-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+/* Judul */
+.app-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Dropdown username */
+.user-select-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-select-container select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+/* PromptCard */
+.prompt-card {
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #fefefe;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+  margin-top: 1rem;
+}
+
+.prompt-card h3 {
+  font-size: 1.1rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.prompt-card p {
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+/* Tombol feedback */
+.prompt-card button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.prompt-card button:hover {
+  background-color: #d1d5db;
+}
