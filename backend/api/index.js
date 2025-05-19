@@ -12,10 +12,10 @@ const app = express();
 app.use(cors(corsOptions));
 app.use(express.json());
 
-app.use('/api', promptsRoutes);
-
 app.get('/', (req, res) => {
   res.send('API READY!');
 });
+
+app.use('/api', promptsRoutes);
 
 export default serverless(app);
