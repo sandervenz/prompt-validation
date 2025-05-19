@@ -5,8 +5,12 @@ import promptsRoutes from './routes/prompts.js';
 
 dotenv.config();
 
+const corsOptions = {
+  origin: ['https://prompt-validation.vercel.app', 'http://localhost:3000'],
+};
+
 const app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -15,7 +19,7 @@ app.get('/', (req, res) => {
 
 app.use('/api', promptsRoutes);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
 });
