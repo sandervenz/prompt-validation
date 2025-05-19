@@ -66,11 +66,16 @@ function App() {
       {loading && <LoadingSpinner />}
 
       {!loading && prompt && (
-        <PromptCard
-          text={prompt.text}
-          llmPrompt={llmPrompt}
-          onFeedback={handleFeedback}
-        />
+        <>
+          <p style={{ marginTop: '1rem', fontWeight: 'bold' }}>
+            Prompt ID: {prompt.id}
+          </p>
+          <PromptCard
+            text={prompt.text}
+            llmPrompt={llmPrompt}
+            onFeedback={handleFeedback}
+          />
+        </>
       )}
 
       {!loading && !prompt && username && (

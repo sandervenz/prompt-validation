@@ -35,4 +35,4 @@ async function importPromptsFromCSV(filePath) {
 }
 
 // Jalankan
-importPromptsFromCSV('../raw_prompts.csv').catch(console.error);
+importPromptsFromCSV('../../raw_prompts.csv').catch(console.error);
