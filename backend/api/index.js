@@ -14,4 +14,8 @@ app.use(express.json());
 
 app.use('/api', promptsRoutes);
 
+app.get('/', (req, res) => {
+  res.send('API READY!');
+});
+
 export default serverless(app);
