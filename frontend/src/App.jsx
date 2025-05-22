@@ -3,7 +3,7 @@ import { fetchNextPrompt, submitFeedback } from './api';
 import UserSelect from './components/UserSelect';
 import PromptCard from './components/PromptCard';
 import LoadingSpinner from './components/LoadingSpinner';
-
+import Stats from './components/Stats';
 
 function App() {
   const [username, setUsername] = useState('');
@@ -81,6 +81,11 @@ function App() {
       {!loading && !prompt && username && (
         <p style={{ marginTop: '1rem' }}>No more prompts available.</p>
       )}
+
+      {/* ✅ Letakkan stats di bawah semua konten */}
+      <div style={{ marginTop: '2rem' }}>
+        <Stats />
+      </div>
     </div>
   );
 }
